@@ -36,7 +36,7 @@ app.post("/", (req, res) => {
   const url = "https://us21.api.mailchimp.com/3.0/lists/6926e1568d";
   const options = {
     method: "POST",
-    auth: "aakash1:ac45ea8c123881ce28acd452475919507-us21"
+    auth: "aakash1:c45ea8c123881ce28acd452475919507-us21"
   };
   const request = https.request(url, options, (response) => {
 
@@ -60,4 +60,4 @@ app.post('/failure',(req,res)=>{
     res.redirect('/');
 });
 
-app.listen(process.env.PORT);
+app.listen(3000);
